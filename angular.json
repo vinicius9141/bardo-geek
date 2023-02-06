@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "bardo-geek:build:production",
+            "firebaseProject": "bardo-geek",
+            "firebaseHostingSite": "bardo-geek"
+          }
         }
       }
     }

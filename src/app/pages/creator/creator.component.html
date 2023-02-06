@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="content">
+    <div class="greeting">
+      <p class="name-greeting">Bem Vindo, Vinicius</p>
+      <p class="greeting-message">Pronto para escrever e impactar pessoas?</p>
+    </div>
+    <div class="edit-post"></div>
+    <div class="write-post">
+      <form [formGroup]="postRegister">
+        <input formControlName="title" />
+        <label for="cars">Categoria do post:</label>
+
+        <select formControlName="categoryPost">
+          <option
+            value="nao-selecionado"
+            disabled
+            [defaultSelected]="'nao-selecionado'"
+          >
+            Selecione uma Categoria
+          </option>
+          <option value="magic">Magic</option>
+          <option value="pokemon">Pokemon</option>
+          <option value="board-games">Board Games</option>
+          <option value="treinos">Treinos</option>
+          <option value="nutricao">Nutrição</option>
+        </select>
+        <textarea formControlName="post"></textarea>
+      </form>
+    </div>
+    <div class="send-post" (click)="sendPost()"><button>Submeter</button></div>
+  </div>
+</div>

@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./theme/rem-calc.scss";
+@import "./theme/reset.scss";
+@import "./theme/variables.scss";
+
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+}

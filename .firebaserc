@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bardo-geek": {
+      "hosting": {
+        "bardo-geek": [
+          "bardo-geek"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bardo-geek"
+  }
+}

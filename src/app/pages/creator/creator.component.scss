@@ -1,0 +1,75 @@
+@import "../../../theme/variables.scss";
+@import "../../../theme/rem-calc.scss";
+:host {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+      .greeting {
+        padding: remc(34) 0;
+        .name-greeting {
+          font-size: remc(32);
+        }
+        .greeting-message {
+          font-size: remc(15);
+        }
+      }
+      .edit-post {
+        width: 80vw;
+        height: remc(90);
+        background-color: var(--darkBlue);
+        margin-bottom: remc(20);
+        border-radius: remc(5);
+      }
+      .write-post {
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: remc(20);
+          textarea {
+            width: 80vw;
+            height: 50vw;
+            padding: remc(23);
+            margin-bottom: remc(20);
+            background-color: var(--low-gray);
+            border: 1px solid var(--black);
+            border-radius: remc(5);
+            resize: none;
+            outline: none;
+          }
+
+          select {
+            background-color: var(--low-gray);
+            border: 1px solid var(--black);
+            padding: 1vw;
+            border-radius: remc(5);
+          }
+
+          input {
+            background-color: var(--low-gray);
+            border: 1px solid var(--black);
+            border-radius: remc(5);
+            padding: 1vw;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .send-post {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        background: #698613;
+        border-radius: remc(11);
+        padding: remc(20) remc(45);
+        color: var(--white);
+        font-size: remc(20);
+        text-align: center;
+        margin-bottom: remc(20);
+        cursor: pointer;
+      }
+    }
+  }
+}
